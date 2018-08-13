@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## Rahul Agarwal
 
-You can use the [editor on GitHub](https://github.com/agrahul89/agrahul89.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+I am a `Java developer` with __8+__ years of experience in Web and middleware application development.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I have been working with popular java frameworks like [Struts2](https://struts.apache.org/) and __[Spring](https://spring.io/)__ and built systems with various complexity and criticalities with 0 Production fallbacks or post-production bugs.
 
-### Markdown
+I have experience working alone and with teams of upto 4 members communicating directly with client representatives and/or onsite team members.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I have experience with -
+1. building high level project architecture
+2. Wire-framing
+3. Technical documentation
+4. Project plans & delivery schedules.
 
-```markdown
-Syntax highlighted code block
+I have proven skills to learn while on the job and producing acceptable results while finding ways to enhance and improve the pace of delivery and quality.
 
-# Header 1
-## Header 2
-### Header 3
+I also contribute as an active member of Technical advisors and Quality Assurance in my current project for current [employer](https://www.cognizant.com/india) i am working for.
 
-- Bulleted
-- List
+> Cannot wait to meet me? Why not [invite me](mailto:rahul89.agarwal@gmail.com) for an interview.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/agrahul89/agrahul89.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+> Want to know more about me? I have written [more about myself](https://agrahul89.github.io/) here with github pages.
