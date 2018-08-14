@@ -15,6 +15,6 @@ I have proven skills to learn while on the job and producing acceptable results 
 
 I also contribute as an active member in a group of Technical advisors and Quality Assurance in our current project for my current [employer](https://www.cognizant.com/india).
 
-> Want to know more? look at [my profile](https://agrahul89.github.io/).
+> Want to know more? Look at [my portfolio](https://agrahul89.github.io/).
 
-> Cannot wait to meet? [invite me](https://agrahul89.github.io/#reachme) to an interview.
+> Cannot wait to meet? [invite me](https://agrahul89.github.io/#contactme) to an interview.
