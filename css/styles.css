@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+:root {
+    --grad-20 : linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%);
+    --grad-40 : linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%
+                                        orange 26.67%,      gold 33.34%,              yellow 40%);
+    --grad-60 : linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%
+                                        orange 26.67%,      gold 33.34%,              yellow 40%
+                                        greenyellow 46.67%, lawngreen 53.34%,         lime 60%);
+    --grad-80 : linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%
+                                        orange 26.67%,      gold 33.34%,              yellow 40%
+                                        greenyellow 46.67%, lawngreen 53.34%,         lime 60%
+                                        springgreen 66.67%, mediumspringgreen 73.34%, aqua 80%);
+    --gradient: linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%
+                                        orange 26.67%,      gold 33.34%,              yellow 40%
+                                        greenyellow 46.67%, lawngreen 53.34%,         lime 60%
+                                        springgreen 66.67%, mediumspringgreen 73.34%, aqua 80%
+                                        turquoise 86.67%,   mediumturquoise 93.34%,   darkturquoise 100%);
+    --grad-100: var(--gradient);
+}
+
 html { font-size: 16px; }
 body { min-width: 320px;/* font-size: calc(16px + 1vw);line-height: calc(1.1em + 0.5vw); */ }
 h1,h2,h3,h4,h5,h6 { font-family: 'Open Sans', sans-serif; }
@@ -53,15 +72,13 @@ section > .head {
     padding: 1rem 1rem;
     text-transform: uppercase;
 }
+
 section > .body { margin: 1rem 1rem; }
 section > .body > blockquote {
     border-right: 5px solid maroon;
      margin: 1rem 0rem;
     padding: .5rem 1.5rem .5rem 0;
 }
-section > .body > blockquote > p      { font-size: 2rem; }
+section > .body > blockquote > p      { font-size: 1.5rem; }
 section > .body > blockquote > footer { font-size: 1rem; }
-
-section > .body > p {
-    padding: 0;
-}
+section > .body > p { padding: 0; }
