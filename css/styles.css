@@ -1,22 +1,53 @@
 @charset "utf-8";
 
 :root {
-    --grad-20 : linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%);
-    --grad-40 : linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%
-                                        orange 26.67%,      gold 33.34%,              yellow 40%);
-    --grad-60 : linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%
-                                        orange 26.67%,      gold 33.34%,              yellow 40%
-                                        greenyellow 46.67%, lawngreen 53.34%,         lime 60%);
-    --grad-80 : linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%
-                                        orange 26.67%,      gold 33.34%,              yellow 40%
-                                        greenyellow 46.67%, lawngreen 53.34%,         lime 60%
-                                        springgreen 66.67%, mediumspringgreen 73.34%, aqua 80%);
-    --gradient: linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%
-                                        orange 26.67%,      gold 33.34%,              yellow 40%
-                                        greenyellow 46.67%, lawngreen 53.34%,         lime 60%
-                                        springgreen 66.67%, mediumspringgreen 73.34%, aqua 80%
+    --grad-20 : linear-gradient(135deg, red 33.3%,          orangered 66.67%,         darkorange 100%);
+    --grad-40 : linear-gradient(135deg, red 16.7%,          orangered 33.34%,         darkorange 50%,
+                                        orange 66.67%,      gold 83.34%,              yellow 100%);
+    --grad-60 : linear-gradient(135deg, red 11.1%,          orangered 22.22%,         darkorange 33.33%,
+                                        orange 44.44%,      gold 55.55%,              yellow 66.66%,
+                                        greenyellow 77.77%, lawngreen 88.88%,         lime 100%);
+    --grad-80 : linear-gradient(135deg, red 8.33%,          orangered 16.67%,         darkorange 25%,
+                                        orange 33.32%,      gold 41.65%,              yellow 50%,
+                                        greenyellow 58.31%, lawngreen 66.64%,         lime 75%,
+                                        springgreen 83.33%, mediumspringgreen 91.66%, aqua 100%);
+    --gradient: linear-gradient(135deg, red 6.67%,          orangered 13.34%,         darkorange 20%,
+                                        orange 26.67%,      gold 33.34%,              yellow 40%,
+                                        greenyellow 46.67%, lawngreen 53.34%,         lime 60%,
+                                        springgreen 66.67%, mediumspringgreen 73.34%, aqua 80%,
                                         turquoise 86.67%,   mediumturquoise 93.34%,   darkturquoise 100%);
     --grad-100: var(--gradient);
+}
+
+.basic {
+    background: var(--grad-20);
+    min-width: 0%;
+    max-width: 19.99%;
+    width: 19.99%;
+}
+.novice {
+    background: var(--grad-40);
+    min-width: 20%;
+    max-width: 39.99%;
+    width: 39.99%;
+}
+.intermediate {
+    background: var(--grad-60);
+    min-width: 40%;
+    max-width: 59.99%;
+    width: 59.99%;
+}
+.advanced {
+    background: var(--grad-80);
+    min-width: 60%;
+    max-width: 79.99%;
+    width: 79.99%;
+}
+.expert {
+    background: var(--grad-100);
+    min-width: 80%;
+    max-width: 99.99%;
+    width: 99.99%;
 }
 
 html {
@@ -63,18 +94,18 @@ header > div#myphoto-box > img#pic { border: 8px solid white; }
 header > div#profile-box { margin-top: 1rem; }
 header > div#profile-box > #profile-name { opacity: .9; padding: 0 1rem }
 header > div#profile-box > #profile-desc { opacity: .6; padding: 0 1rem }
-header > div#profile-box > #profile-desc > span { display: inline-block; }
+header > div#profile-box > #profile-desc > div { display: inline-block; }
 
 
 section > .head {
     background-image: linear-gradient(120deg, #159957, #155799);
       color: white;
-     margin: 0 -15px;
+     margin: 0 -15px 2rem;
     padding: 1rem 1rem 1.25rem;
     text-transform: lowercase;
 }
 
-section > .body { margin: 2rem 1rem; }
+section > .body { margin: 0 1rem 2rem; }
 section > .body > blockquote {
     border-right: .25rem solid maroon;
      margin: 1rem 0rem;
@@ -84,20 +115,43 @@ section > .body > p { padding: 0; }
 
 section > .body > ul {
     list-style: none;
+    margin-top: 2rem;
     padding-left: 0;
 }
-section > .body > ul > li{
-    background-color: rgb(200, 200  , 200, 0.4);
-    border-radius: 0.25rem;
-    margin-bottom: .5rem;
+section > .body > ul > li {
+    border-radius: .125rem;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin-bottom: 1rem;
 }
-section > .body > ul > li > span {
-    display: inline-block;
-    vertical-align: middle;
+section > .body > ul > li > div.icon {
+    padding: 0.25rem;
 }
-section > .body > ul > li > span.icon{
+section > .body > ul > li > div.icon > img {
+    object-fit: contain;
+    object-position: 50% 50%;
+    width: 1.5rem;
+}
+section > .body > ul > li > div.proficiency {
+    background-color: rgba(21, 153, 87, 0.9);
+    background-color: rgba(21, 87, 153, 1);
+    background-color: rgba(27, 42, 47, 1);
+    border-bottom-right-radius: .125rem;
+    border-top-right-radius: .125rem;
+    color: white;
+    text-align: right;
+    width: calc(100% - 1.5rem);
 
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
-section > .body > ul > li > span.icon > img{
-    width: 1.25rem;
+section > .body > ul > li > div.proficiency > div {
+    background-color: rgba(0, 173, 242, 1);
+    background-color: navy;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    height: .5rem;
+    padding: 0.25rem;
+    vertical-align: middle;
 }
