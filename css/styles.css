@@ -66,9 +66,9 @@ p,label,ul,ol,li,input,textarea { font-family: 'Segoe UI', sans-serif; }
     html{ font-size: 1.25rem; }
 } @media (min-width: 992px) {
     html{ font-size: 1.50rem; }
-}/* @media (min-width: 1200px) {
+}@media (min-width: 1200px) {
     html{ font-size: 1.50rem; }
-} */
+}
 
 
 header {
@@ -96,7 +96,7 @@ header > div#profile-box > #profile-desc > div { display: inline-block; }
 section > .head {
     background-image: linear-gradient(120deg, #159957, #155799);
       color: white;
-     margin: 0 -15px 3rem;
+     margin: 0 -15px 1rem;
     padding: .75rem 1rem 1rem;
     text-transform: lowercase;
 }
@@ -119,21 +119,26 @@ section > .body > ul {
 }
 
 section > .body > ul > li {
-    border-radius: .125rem;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.3);
     display: flex;
     margin-bottom: 1rem;
+    transition: box-shadow 200ms ease-out;
 }
 section > .body > ul > li:last-child {
     margin-bottom: 0;
 }
 section > .body > ul > li:hover, section > .body > ul > li:active {
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 200ms linear;
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 200ms ease-in;
 }
 
 section > .body > ul > li > a > div.icon {
-    padding: 0.25rem;
+    border: .05rem solid rgba(0, 0, 0, .2);
+    border-right: none;
+    border-radius: .125rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding: .25rem;
 }
 section > .body > ul > li > a > div.icon > img {
     object-fit: contain;
