@@ -50,22 +50,21 @@
     width: 99.99%;
 }
 
-html {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-}
+
+html { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 body { min-width: 320px;/* font-size: calc(16px + 1vw);line-height: calc(1.1em + 0.5vw); */ }
 h1,h2,h3,h4,h5,h6 { font-family: 'Open Sans', sans-serif; }
 a,button,link,nav,select,optgroup,option { font-family: 'Segoe UI', sans-serif; }
 p,label,ul,ol,li,input,textarea { font-family: 'Segoe UI', sans-serif; }
 
+
 @media (min-width: 320px) {
     html{ font-size: 1.25rem; }
-}/* @media (min-width: 576px) {
+} @media (min-width: 576px) {
+    html{ font-size: 1.05rem; }
+} @media (min-width: 768px) {
     html{ font-size: 1.25rem; }
-}@media (min-width: 768px) {
-    html{ font-size: 1.25rem; }
-} */@media (min-width: 992px) {
+} @media (min-width: 992px) {
     html{ font-size: 1.50rem; }
 }/* @media (min-width: 1200px) {
     html{ font-size: 1.50rem; }
@@ -79,7 +78,6 @@ header {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
 header > div#myphoto-box {
     position: relative;
     margin: 0 auto;
@@ -88,9 +86,7 @@ header > div#myphoto-box {
     width: 15%;
     z-index: 1;
 }
-
 header > div#myphoto-box > img#pic { border: 8px solid white; }
-
 header > div#profile-box { margin-top: 1rem; }
 header > div#profile-box > #profile-name { opacity: .9; padding: 0 1rem }
 header > div#profile-box > #profile-desc { opacity: .6; padding: 0 1rem }
@@ -100,41 +96,52 @@ header > div#profile-box > #profile-desc > div { display: inline-block; }
 section > .head {
     background-image: linear-gradient(120deg, #159957, #155799);
       color: white;
-     margin: 0 -15px 2rem;
-    padding: 1rem 1rem 1.25rem;
+     margin: 0 -15px 3rem;
+    padding: .75rem 1rem 1rem;
     text-transform: lowercase;
 }
 
 section > .body { margin: 0 1rem 2rem; }
+section > .body > p { padding: 0; }
 section > .body > blockquote {
     border-right: .25rem solid maroon;
      margin: 1rem 0rem;
     padding: .5rem 1.5rem .5rem 0;
 }
-section > .body > p { padding: 0; }
 
 section > .body > ul {
+    border: .05rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
     list-style: none;
     margin-top: 2rem;
     padding-left: 0;
+    padding: 1rem;
 }
+
 section > .body > ul > li {
     border-radius: .125rem;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     margin-bottom: 1rem;
 }
-section > .body > ul > li > div.icon {
+section > .body > ul > li:last-child {
+    margin-bottom: 0;
+}
+section > .body > ul > li:hover, section > .body > ul > li:active {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 200ms linear;
+}
+
+section > .body > ul > li > a > div.icon {
     padding: 0.25rem;
 }
-section > .body > ul > li > div.icon > img {
+section > .body > ul > li > a > div.icon > img {
     object-fit: contain;
     object-position: 50% 50%;
     width: 1.5rem;
 }
+
 section > .body > ul > li > div.proficiency {
-    background-color: rgba(21, 153, 87, 0.9);
-    background-color: rgba(21, 87, 153, 1);
     background-color: rgba(27, 42, 47, 1);
     border-bottom-right-radius: .125rem;
     border-top-right-radius: .125rem;

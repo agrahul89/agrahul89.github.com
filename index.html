@@ -16,25 +16,30 @@
 </head>
 <body class="container-fluid">
     <header class="row">
-        <div id="myphoto-box" class="text-center col-4 col-sm-3">
+        <div id="myphoto-box" class="text-center col-8 col-sm-3">
             <img id="pic" class="img-fluid rounded-circle mx-auto d-block"
             src="assets/me.jpeg" alt="My Pic" aria-placeholder="My Pic">
         </div>
         <div id="profile-box" class="text-center col-12 col-sm-9">
-            <h2 id="profile-name">rahul agarwal</h2>
-            <h6 id="profile-desc">
+            <h1 id="profile-name" class="display-4">rahul agarwal</h1>
+            <h6 id="profile-desc" class="lead">
                 <div><em>an average <ins>developer</ins> </em></div>
                 <div><em>with <ins>not just average skills</ins></em></div>
             </h6>
         </div>
+        <!-- <div id="social" class="text-center">
+            <i class="fa fa-lg fa-github"></i>
+            <i class="fa fa-lg fa-stack-overflow"></i>
+            <i class="fa fa-lg fa-twitter"></i>
+            <i class="fa fa-lg fa-facebook-official"></i>
+        </div> -->
     </header>
-    <div class="section-separator"></div>
     <section id="aboutme">
         <h4 class="head">about me</h4>
         <div class="body">
             <blockquote class="blockquote text-right">
-                <p class="mb-0">A passionate Java developer, experienced in web application development and high
-                performance middleware applications</p>
+                <p class="mb-0">I am a passionate and skilled Java developer, experienced in web application
+                    development and high performance middleware applications</p>
             </blockquote>
             <p>
                 I have always sought opportunities and challenges that are meaningful and fulfilling. This has taken me
@@ -58,69 +63,110 @@
         </div>
     </section>
     <section id="skills">
-        <h4 class="head">tools<small> &amp; </small>framework</h4>
+        <!-- <h4 class="head">tools <small> &amp; </small>framework</h4> -->
+        <h4 class="head">skills</h4>
         <div class="body">
-            <ul class="front-end" title="Front-end Tools & Frameworks">
-                <li class="language" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/html5.png" title="HTML5"></div>
-                    <div class="proficiency"><div class="intermediate" title="Intermediate"/></div>
+            <ul class="languages">
+                <h6><strong>Languages</strong></h6><hr>
+                <li title="Java is my primary development language"
+                data-container="body" data-toggle="popover" data-placement="top" data-content="test">
+                    <a href="http://www.oracle.com/technetwork/java/javase/overview/index.html" target="_blank">
+                        <div class="icon"><img src="assets/ico/java.png" title="Java 6/7/8"></div>
+                    </a><div class="proficiency"><div class="advanced" title="Advance"/>
                 </li>
-                <li class="language" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/css3.png" title="CSS3"></div>
-                    <div class="proficiency"><div class="novice" title="Novice"/></div>
+                <hr>
+                <li title="Using HTML5 for layout design">
+                    <!-- <a href="https://www.w3.org/TR/html/" target="_blank"> -->
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                        <div class="icon"><img src="assets/ico/html5.png" title="HTML5"></div>
+                    </a><div class="proficiency"><div class="intermediate" title="Intermediate"/>
                 </li>
-                <li class="language" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/js.png" title="JavaScript"></div>
-                    <div class="proficiency"><div class="novice" title="Novice"/></div>
+                <li title="Using CSS 3 for layout styling">
+                    <!-- <a href="https://www.w3.org/TR/css/" target="_blank"> -->
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                        <div class="icon"><img src="assets/ico/css3.png" title="CSS3"></div>
+                    </a><div class="proficiency"><div class="novice" title="Novice"/>
                 </li>
-                <li class="language" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/ts.png" title="TypeScript"></div>
-                    <div class="proficiency"><div class="novice" title="Novice"/></div>
+                <hr>
+                <li title="Using JavaScript as required for dynamic object-oriented interactions">
+                    <!-- <a href="https://www.javascript.com" target="_blank"> -->
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                        <div class="icon"><img src="assets/ico/js.png" title="JavaScript"></div>
+                    </a><div class="proficiency"><div class="novice" title="Novice"/>
                 </li>
-                <li class="framework" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/bootstrap.png" title="Bootstrap 4"></div>
-                    <div class="proficiency"><div class="intermediate" title="Intermediate"/></div>
-                </li>
-                <li class="framework" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/jquery.png" title="jQuery"></div>
-                    <div class="proficiency"><div class="novice" title="Novice"/></div>
-                </li>
-                <li class="framework" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/angular.png" title="Angular"></div>
-                    <div class="proficiency"><div class="basic" title="Basic"/></div>
+                <li title="Using TypeScript with Angular">
+                    <a href="https://www.typescriptlang.org/docs/home.html" target="_blank">
+                        <div class="icon"><img src="assets/ico/ts.png" title="TypeScript"></div>
+                    </a><div class="proficiency"><div class="novice" title="Novice"/>
                 </li>
             </ul>
 
-            <ul class="back-end" title="Back-end Tools & Frameworks">
-                <li class="language" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/java.png" title="Java 6/7/8"></div>
-                    <div class="proficiency"><div class="advanced" title="Advance"/></div>
+            <ul class="frameworks">
+                <h6><strong>Frameworks</strong></h6><hr>
+                <li title="Cognizant certified Angular developer">
+                    <a href="https://angular.io/docs" target="_blank">
+                        <div class="icon"><img src="assets/ico/angular.png" title="Angular"></div>
+                    </a><div class="proficiency"><div class="basic" title="Basic"/>
                 </li>
-                <li class="framework" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/spring-framework.png" title="Spring + MVC + REST"></div>
-                    <div class="proficiency"><div class="intermediate" title="Intermediate"/></div>
+                <li title="Hands-on experience in web application layout modelling & styling">
+                    <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">
+                        <div class="icon"><img src="assets/ico/bootstrap.png" title="Bootstrap 4"></div>
+                    </a><div class="proficiency"><div class="intermediate" title="Intermediate"/>
                 </li>
-                <li class="framework" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/spring-data.png" title="Spring-Data-JPA"></div>
-                    <div class="proficiency"><div class="novice" title="Novice"/></div>
+                <li title="Using jQuery for dynamic UI interactions and asynchronous comunications">
+                    <a href="https://api.jquery.com/" target="_blank">
+                        <div class="icon"><img src="assets/ico/jquery.png" title="jQuery"></div>
+                    </a><div class="proficiency"><div class="novice" title="Novice"/>
                 </li>
-                <li class="framework" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/spring-integration.png" title="Spring-Integration"></div>
-                    <div class="proficiency"><div class="intermediate" title="Intermediate"/></div>
+                <hr>
+                <li title="Framework of choice for middleware development. Hands-on experience with MVC/REST/DAO">
+                    <a href="https://spring.io/projects/spring-framework" target="_blank">
+                        <div class="icon"><img src="assets/ico/spring-framework.png" title="Spring + MVC + REST + DAO"></div>
+                    </a><div class="proficiency"><div class="intermediate" title="Intermediate"/>
                 </li>
-                <li class="framework" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/hibernate.png" title="Hibernate 4"></div>
-                    <div class="proficiency"><div class="intermediate" title="Intermediate"/></div>
+                <li title="Hands-on experience with integration of JMS, REST & Azure based Services">
+                    <a href="https://spring.io/projects/spring-integration" target="_blank">
+                        <div class="icon"><img src="assets/ico/spring-integration.png" title="Spring-Integration"></div>
+                    </a><div class="proficiency"><div class="intermediate" title="Intermediate"/>
                 </li>
-                <li class="tools" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/maven.png" title="Maven"></div>
-                    <div class="proficiency"><div class="advanced" title="Advance"/></div>
+                <hr>
+                <li title="Using as wrapper over persistence layer framework">
+                    <a href="https://spring.io/projects/spring-data" target="_blank">
+                        <div class="icon"><img src="assets/ico/spring-data.png" title="Spring-Data-JPA"></div>
+                    </a><div class="proficiency"><div class="novice" title="Novice"/>
                 </li>
-                <li class="tools" title="Proficiency Level">
-                    <div class="icon"><img src="assets/ico/jenkins.png" title="Jenkins"></div>
-                    <div class="proficiency"><div class="basic" title="Basic"/></div>
+                <li title="Using for persistence layer, directly or with Spring">
+                    <a href="http://hibernate.org/orm/documentation/4.3/" target="_blank">
+                        <div class="icon"><img src="assets/ico/hibernate.png" title="Hibernate 4"></div>
+                    </a><div class="proficiency"><div class="intermediate" title="Intermediate"/>
+                </li>
+                <hr>
+                <li title="Used in past projects for UI and conroller layer development">
+                    <a href="https://struts.apache.org/docs/" target="_blank">
+                        <div class="icon"><img src="assets/ico/struts.png" title="Struts 2"></div>
+                    </a><div class="proficiency"><div class="intermediate" title="Intermediate"/>
                 </li>
             </ul>
+
+            <ul class="tools">
+                <h6><strong>Build Tools</strong></h6><hr>
+                <li title="Build, configuration & deployment of web and middleware applications">
+                    <a href="https://maven.apache.org/users/index.html" target="_blank">
+                        <div class="icon"><img src="assets/ico/maven.png" title="Maven"></div>
+                    </a><div class="proficiency"><div class="advanced" title="Advance"/>
+                </li>
+                <li title="Exposure to Jenkins for setup, build & deployment to nexus repository">
+                    <a href="https://jenkins.io/doc/" target="_blank">
+                        <div class="icon"><img src="assets/ico/jenkins.png" title="Jenkins"></div>
+                    </a><div class="proficiency"><div class="basic" title="Basic"/>
+                </li>
+                <!-- <hr><li title="Exposure to npm for package management">
+                    <a href="https://docs.npmjs.com/" target="_blank">
+                        <div class="icon"><img src="assets/ico/npm.png" title="npm"></div>
+                    </a><div class="proficiency"><div class="basic" title="Basic"/>
+                </li> -->
+            </ul>
+
         </div>
     </section>
     <section id="techexp">
