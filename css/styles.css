@@ -149,10 +149,8 @@ section > .body > ul > li > div.proficiency {
     justify-content: left;
 }
 section > .body > ul > li > div.proficiency > div {
-    background-color: rgba(0, 173, 242, 1);
-    background-color: navy;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
+    border-bottom-right-radius: .125rem;
+    border-top-right-radius: .125rem;
     height: .5rem;
     padding: 0.25rem;
     vertical-align: middle;
