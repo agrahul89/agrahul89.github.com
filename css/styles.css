@@ -58,19 +58,6 @@ a,button,link,nav,select,optgroup,option { font-family: 'Segoe UI', sans-serif; 
 p,label,ul,ol,li,input,textarea { font-family: 'Segoe UI', sans-serif; }
 
 
-@media (min-width: 320px) {
-    html{ font-size: 1.25rem; }
-} @media (min-width: 576px) {
-    html{ font-size: 1.05rem; }
-} @media (min-width: 768px) {
-    html{ font-size: 1.25rem; }
-} @media (min-width: 992px) {
-    html{ font-size: 1.50rem; }
-}@media (min-width: 1200px) {
-    html{ font-size: 1.50rem; }
-}
-
-
 header {
     background-color: var(--bg-green);
     background-image: linear-gradient(120deg, #155799, #159957);
@@ -113,9 +100,12 @@ section > .body > ul {
     border: .05rem solid rgba(0, 0, 0, 0.2);
     border-radius: .25rem;
     list-style: none;
-    margin-top: 2rem;
     padding-left: 0;
     padding: 1rem;
+
+    min-width: 250px;
+    width: 48.5%;
+    display: inline-block;
 }
 
 section > .body > ul > li {
@@ -166,4 +156,20 @@ section > .body > ul > li > div.proficiency > div {
     height: .5rem;
     padding: 0.25rem;
     vertical-align: middle;
+}
+
+
+@media (min-width: 320px) {
+    html{ font-size: 1.25rem; }
+} @media (min-width: 576px) {
+    html{ font-size: 1.05rem; }
+} @media (min-width: 768px) {
+    html{ font-size: 1.25rem; }
+} @media (min-width: 992px) {
+    html{ font-size: 1.50rem; }
+}@media (min-width: 1200px) {
+    html{ font-size: 1.50rem; }
+}
+@media (min-width: 320px) and (max-width: 640px) {
+    section > .body > ul { width: 100%; }
 }
