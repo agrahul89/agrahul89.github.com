@@ -23,25 +23,25 @@
     background: var(--grad-20);
     min-width: 0%;
     max-width: 19.99%;
-    width: 19.99%;
+    width: 9.99%;
 }
 .novice {
     background: var(--grad-40);
     min-width: 20%;
     max-width: 39.99%;
-    width: 39.99%;
+    width: 24.99%;
 }
 .intermediate {
     background: var(--grad-60);
     min-width: 40%;
     max-width: 59.99%;
-    width: 59.99%;
+    width: 49.99%;
 }
 .advanced {
     background: var(--grad-80);
     min-width: 60%;
     max-width: 79.99%;
-    width: 79.99%;
+    width: 74.99%;
 }
 .expert {
     background: var(--grad-100);
