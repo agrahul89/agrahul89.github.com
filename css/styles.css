@@ -49,6 +49,8 @@
     max-width: 99.99%;
     width: 99.99%;
 }
+.popover-header { font-size: .6rem;  }
+.popover-body { font-size: .65rem; }
 
 
 html { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
