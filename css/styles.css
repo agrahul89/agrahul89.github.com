@@ -19,35 +19,35 @@
     --grad-100: var(--gradient);
 }
 
-.basic {
+.basic, .beginner {
     background: var(--grad-20);
     min-width: 0%;
-    max-width: 19.99%;
-    width: 9.99%;
+    max-width: 20%;
+    width: 15%;
 }
 .novice {
     background: var(--grad-40);
-    min-width: 20%;
-    max-width: 39.99%;
-    width: 24.99%;
+    min-width: 21%;
+    max-width: 40%;
+    width: 35%;
 }
 .intermediate {
     background: var(--grad-60);
-    min-width: 40%;
-    max-width: 59.99%;
-    width: 49.99%;
+    min-width: 41%;
+    max-width: 60%;
+    width: 55%;
 }
-.advanced {
+.advance, .advanced {
     background: var(--grad-80);
     min-width: 60%;
-    max-width: 79.99%;
-    width: 74.99%;
+    max-width: 80%;
+    width: 75%;
 }
 .expert {
     background: var(--grad-100);
     min-width: 80%;
-    max-width: 99.99%;
-    width: 99.99%;
+    max-width: 100%;
+    width: 100%;
 }
 .popover-header { font-size: .6rem;  }
 .popover-body { font-size: .65rem; }
@@ -98,7 +98,7 @@ section > .body > blockquote {
     padding: .5rem 1.5rem .5rem 0;
 }
 
-section > .body > ul {
+section#skills > .body > ul {
     border: .05rem solid rgba(0, 0, 0, 0.2);
     border-radius: .25rem;
     list-style: none;
@@ -110,21 +110,21 @@ section > .body > ul {
     display: inline-block;
 }
 
-section > .body > ul > li {
+section#skills > .body > ul > li {
     box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.3);
     display: flex;
     margin-bottom: 1rem;
     transition: box-shadow 200ms ease-out;
 }
-section > .body > ul > li:last-child {
+section#skills > .body > ul > li:last-child {
     margin-bottom: 0;
 }
-section > .body > ul > li:hover, section > .body > ul > li:active {
+section#skills > .body > ul > li:hover, section#skills > .body > ul > li:active {
     box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3);
     transition: box-shadow 200ms ease-in;
 }
 
-section > .body > ul > li > a > div.icon {
+section#skills > .body > ul > li > a > div.icon {
     border: .05rem solid rgba(0, 0, 0, .2);
     border-right: none;
     border-radius: .125rem;
@@ -132,13 +132,13 @@ section > .body > ul > li > a > div.icon {
     border-top-right-radius: 0;
     padding: .25rem;
 }
-section > .body > ul > li > a > div.icon > img {
+section#skills > .body > ul > li > a > div.icon > img {
     object-fit: contain;
     object-position: 50% 50%;
     width: 1.5rem;
 }
 
-section > .body > ul > li > div.proficiency {
+section#skills > .body > ul > li > div.proficiency {
     background-color: rgba(27, 42, 47, 1);
     border-bottom-right-radius: .125rem;
     border-top-right-radius: .125rem;
@@ -150,7 +150,7 @@ section > .body > ul > li > div.proficiency {
     align-items: center;
     justify-content: left;
 }
-section > .body > ul > li > div.proficiency > div {
+section#skills > .body > ul > li > div.proficiency > div {
     border-bottom-right-radius: .125rem;
     border-top-right-radius: .125rem;
     height: .5rem;
@@ -171,5 +171,5 @@ section > .body > ul > li > div.proficiency > div {
     html{ font-size: 1.50rem; }
 }
 @media (min-width: 320px) and (max-width: 640px) {
-    section > .body > ul { width: 100%; }
+    section#skills > .body > ul { width: 100%; }
 }
