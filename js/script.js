@@ -5,6 +5,9 @@ $(document).ready(function() {
     addToSkills(testTools);
     addToSkills(buildTools);
     enablePopover(); // enable bootstrap popover
+    $('#under-construction').modal({
+        backdrop: 'static'
+    });
 });
 
 function addToSkills(skillGroup) {
