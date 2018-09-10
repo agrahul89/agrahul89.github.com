@@ -1,8 +1,10 @@
-let separator = {
+let separatorHidden = {
+    id     : "separator",
+    hidden : true,
+};
+let separatorShown = {
     id     : "separator",
     hidden : false,
-    hide  : function() { this.hidden = true ; return this; },
-    show  : function() { this.hidden = false; return this; }
 };
 /* ----------------------------------------------------------------------------------------------------------------- */
 let java = {
@@ -54,7 +56,11 @@ let languages = {
     "id"     : "languages",
     "title"  : "Languages",
     "float"  : "left",
-    "skills" : [java, html, css, javascript, typescript]
+    "skills" : [java,
+        separatorShown,
+        html, css,
+        separatorShown,
+        javascript, typescript]
 };
 /* ----------------------------------------------------------------------------------------------------------------- */
 let angular = {
@@ -132,11 +138,11 @@ let frameworks = {
     "float"  : "right",
     "skills" : [
         angular, bootstrap, jQuery,
-        separator.show(),
+        separatorShown,
         spring_framework, spring_integration,
-        separator.show(),
+        separatorShown,
         spring_data_jpa, hibernate,
-        separator.show(),
+        separatorShown,
         struts]
 };
 /* ----------------------------------------------------------------------------------------------------------------- */
@@ -213,5 +219,5 @@ let buildTools = {
     "id"     : "build-tools",
     "title"  : "Build Tools",
     "float"  : "right",
-    "skills" : [ maven, jenkins, separator.hide(), npm]
+    "skills" : [ maven, jenkins, separatorHidden, npm]
 };

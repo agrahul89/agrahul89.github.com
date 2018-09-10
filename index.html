@@ -19,13 +19,13 @@
 <body class="container-fluid">
     <header class="row">
         <div id="myphoto-box" class="text-center col-8 col-sm-3">
-            <img id="pic" class="img-fluid rounded-circle mx-auto d-block" src="assets/me.jpeg"alt="My Pic">
+            <img id="pic" class="img-fluid rounded-circle mx-auto d-block" src="assets/me.jpeg" alt="My Pic">
         </div>
         <div id="profile-box" class="text-center col-12 col-sm-9">
             <h1 id="profile-name" class="display-4">rahul agarwal</h1>
             <h6 id="profile-desc">
-                <div><em>an average <ins>developer</ins> </em></div>
-                <div><em>with <ins>not just average skills</ins></em></div>
+                <p><em>an average <ins>developer</ins> </em></p>
+                <p><em>with <ins>not just average skills</ins></em></p>
             </h6>
         </div>
     </header>
@@ -54,22 +54,22 @@
     <section id="skills">
         <h4 class="head">skills</h4>
         <div class="body clearfix">
-            <ul id="languages" class="float-left">
+            <ul id="languages" class="list-unstyled float-left">
                 <h6><strong>Languages</strong></h6><hr>
                 <!-- Skill items to be pushed with jQuery -->
             </ul>
 
-            <ul id="frameworks" class="float-right">
+            <ul id="frameworks" class="list-unstyled float-right">
                 <h6><strong>Dev Tools</strong></h6><hr>
                 <!-- Skill items to be pushed with jQuery -->
             </ul>
 
-            <ul id="test-tools" class="float-left">
+            <ul id="test-tools" class="list-unstyled float-left">
                 <h6><strong>Testing Tools</strong></h6><hr>
                 <!-- Skill items to be pushed with jQuery -->
             </ul>
 
-            <ul id="build-tools" class="float-right">
+            <ul id="build-tools" class="list-unstyled float-right">
                 <h6><strong>Build Tools</strong></h6><hr>
                 <!-- Skill items to be pushed with jQuery -->
             </ul>
@@ -86,7 +86,7 @@
     </section>
     <footer class="row">
         <div class="col-12 col-sm-6" id="contactme">
-            <form id="contact-form" class="list-group" action="#">
+            <form id="contact-form" class="list-group" action="">
                 <div id="name" class="form-row">
                     <div class="col form-group">
                         <label class="text-white" for="firstname"><small>First Name</small></label>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="text-white" for="phone"><small>Phone Number(optional)</small></label>
+                    <label class="text-white" for="phone"><small>Phone Number <small>(optional)</small></small></label>
                     <input type="tel" class="form-control form-control-sm" id="phone" minlength="7" maxlength="14">
                 </div>
                 <div class="form-group">
@@ -116,7 +116,7 @@
         </div>
         <div class="col-12 col-sm-6" id="social">
             <label class="sr-only">Social Platform Links</label>
-            <ul class="list-group">
+            <ul class="list-unstyled list-group">
                 <li class="list-group-item d-flex align-items-center">
                     <a target="_blank" id="portfolio" href="https://agrahul89.github.io"><span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>

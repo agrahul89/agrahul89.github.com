@@ -14,6 +14,7 @@ $(document).ready(function() {
     $('#contact-form').on("submit", function(event){
         event.preventDefault();
         let mailto = $('#mail-id').next('label').text();
+        let mailSub= 'Can+we+have+a+meeting%3F';
 
         let name = $('#firstname').val() + ' ' + $('#lastname').val();
         let phone = $('#phone').val();
@@ -24,7 +25,7 @@ $(document).ready(function() {
                     + 'E-mail  : ' + email + '\n'
                     + '\n' + comments;
 
-        let url = 'mailto:' + mailto + '?subject=Can+we+meet+for+an+interview%3F&body=' + encodeURI(mailbody);
+        let url = 'mailto:' + mailto + '?subject=' + mailSub + '&body=' + encodeURI(mailbody);
         let anchor = document.createElement('a');
         anchor.href = url;
         anchor.target = '_blank';
