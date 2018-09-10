@@ -10,6 +10,26 @@ $(document).ready(function() {
             backdrop: 'static'
         });
     }
+
+    $('#contact-form').on("submit", function(event){
+        event.preventDefault();
+        let mailto = $('#mail-id').next('label').text();
+
+        let name = $('#firstname').val() + ' ' + $('#lastname').val();
+        let phone = $('#phone').val();
+        let email = $('#email').val();
+        let comments= $('#comments').val();
+        let mailbody= 'Name    : ' + name  + '\n'
+                    + 'Contact : ' + phone + '\n'
+                    + 'E-mail  : ' + email + '\n'
+                    + '\n' + comments;
+
+        let url = 'mailto:' + mailto + '?subject=Can+we+meet+for+an+interview%3F&body=' + encodeURI(mailbody);
+        let anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.target = '_blank';
+        anchor.click();
+    });
 });
 
 function addToSkills(skillGroup) {
