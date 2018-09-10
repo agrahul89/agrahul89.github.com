@@ -69,22 +69,22 @@
         <div class="body clearfix">
             <ul id="languages" class="float-left">
                 <h6><strong>Languages</strong></h6><hr>
-                <!-- Skill items will be pushed with jQuery -->
+                <!-- Skill items to be pushed with jQuery -->
             </ul>
 
             <ul id="frameworks" class="float-right">
                 <h6><strong>Dev Tools</strong></h6><hr>
-                <!-- Skill items will be pushed with jQuery -->
+                <!-- Skill items to be pushed with jQuery -->
             </ul>
 
             <ul id="test-tools" class="float-left">
                 <h6><strong>Testing Tools</strong></h6><hr>
-                <!-- Skill items will be pushed with jQuery -->
+                <!-- Skill items to be pushed with jQuery -->
             </ul>
 
             <ul id="build-tools" class="float-right">
                 <h6><strong>Build Tools</strong></h6><hr>
-                <!-- Skill items will be pushed with jQuery -->
+                <!-- Skill items to be pushed with jQuery -->
             </ul>
 
         </div>
@@ -93,28 +93,99 @@
         <h4 class="head">work experience</h4>
         <div class="body"></div>
     </section>
-    <section id="projects"></section>
-    <section id="accolades"></section>
-    <section id="academics"></section>
-    <section id="contactme"></section>
-    <footer  id=""></footer>
+    <section id="academics">
+            <h4 class="head">Education</h4>
+            <div class="body"></div>
+    </section>
+    <footer class="row">
+        <div class="col col-1"></div>
+        <div class="col-12 col-sm-4" id="contactme">
+            <form id="contact-form" class="list-group" action="#">
+                <div id="name" class="form-row">
+                    <div class="col form-group">
+                        <label class="text-white" for="firstname"><small>First Name</small></label>
+                        <input type="text" class="form-control form-control-sm" id="firstname" minlength="2" maxlength="20">
+                    </div>
+                    <div class="col form-group">
+                        <label class="text-white" for="lastname"><small>Last Name</small></label>
+                        <input type="text" class="form-control form-control-sm" id="lastname" minlength="2" maxlength="20">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="text-white" for="phone"><small>Phone Number</small></label>
+                    <input type="tel" class="form-control form-control-sm" id="phone" minlength="7" maxlength="14">
+                </div>
+                <div class="form-group">
+                    <label class="text-white" for="email"><small>E-mail</small></label>
+                    <input type="email" class="form-control form-control-sm" id="email" minlength="7" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label class="text-white" for="comments"><small>Comments</small></label>
+                    <textarea class="form-control form-control-sm" id="comments" rows="5" cols="50"></textarea>
+                </div>
+                <button class="btn btn-outline-light btn-block">Contact me</button>
+            </form>
+        </div>
+        <div class="col col-2"></div>
+        <div class="col-12 col-sm-4" id="social">
+            <label for="social" class="sr-only">Social Platform Links</label>
+            <ul class="list-group">
+                <li class="list-group-item d-flex align-items-center">
+                    <a target="_blank" id="portfolio" href="https://agrahul89.github.io"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <label for="portfolio"><small>agrahul89.github.io</small></label>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <a target="_blank" id="mail-id" href="mailto:rahul89.agarwal@gmail.com"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope-open fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <label for="mail-id"><small>rahul89.agarwal@gmail.com</small></label>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <a target="_blank" id="github" href="https://github.com/agrahul89"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <label for="github"><small>github.com/agrahul89</small></label>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <a target="_blank" id="linkedin" href="https://www.linkedin.com/in/agrahul89/"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <label for="linkedin"><small>linkedin.com/in/agrahul89</small></label>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <a target="_blank" id="resume" href="./assets/resume.pdf"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <label for="linkedin"><small>linkedin.com/in/agrahul89</small></label>
+                </li>
+            </ul>
+        </div>
+        <div class="col col-1"></div>
+    </footer>
 
     <div class="modal fade" id="under-construction" tabindex="-1" role="dialog"
         aria-label="Site in repair" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-          <div class="modal-content bg-dark rounded-0">
-            <div class="modal-body text-center">
-                <span class="fa fa-wheelchair-alt text-warning" style="font-size: 15rem"></span>
+            <div class="modal-content bg-dark rounded-0">
+                <div class="modal-body text-center">
+                    <span class="fa fa-wheelchair-alt text-warning" style="font-size: 15rem"></span>
+                </div>
+                <div class="modal-footer border-top border-warning">
+                    <h6 class="modal-title text-light mx-auto" id="modal-title">Site under construction</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
             </div>
-            <div class="modal-footer border-top border-warning">
-                <h6 class="modal-title text-light mx-auto" id="modal-title">Site under construction</h6>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
 </body>
 <script src="js/jquery-3.2.1.slim.min.js"></script>

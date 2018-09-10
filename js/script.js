@@ -5,9 +5,11 @@ $(document).ready(function() {
     addToSkills(testTools);
     addToSkills(buildTools);
     enablePopover(); // enable bootstrap popover
-    $('#under-construction').modal({
-        backdrop: 'static'
-    });
+    if(showPopup()) {
+        $('#under-construction').modal({
+            backdrop: 'static'
+        });
+    }
 });
 
 function addToSkills(skillGroup) {
@@ -65,4 +67,15 @@ function enablePopover() {
     $('ul.languages > li').mouseout(popover.popover('hide'));
     // For devices with hover effect in IE
     $('ul.languages > li').mouseleave(popover.popover('hide'));
+}
+
+function showPopup() {
+    let show = true;
+    let lastShownAt = localStorage.getItem('lastShown');
+    let now = Date.now();
+    if (lastShownAt) {
+        show = now - lastShownAt > 24*60*60*1000;
+    }
+    localStorage.setItem('lastShown', now);
+    return show;
 }

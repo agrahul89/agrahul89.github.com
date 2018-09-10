@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 :root {
+
+    --accent: #0A5F91;
+    --bgcolor: #2DBAFF;
+
     --grad-20 : linear-gradient(135deg, red 33.3%,          orangered 66.67%,         darkorange 100%);
     --grad-40 : linear-gradient(135deg, red 16.7%,          orangered 33.34%,         darkorange 50%,
                                         orange 66.67%,      gold 83.34%,              yellow 100%);
@@ -17,6 +21,7 @@
                                         springgreen 66.67%, mediumspringgreen 73.34%, aqua 80%,
                                         turquoise 86.67%,   mediumturquoise 93.34%,   darkturquoise 100%);
     --grad-100: var(--gradient);
+
 }
 
 .basic, .beginner {
@@ -52,18 +57,28 @@
 .popover-header { font-size: .6rem;  }
 .popover-body { font-size: .65rem; }
 
+.form-control { background-color: transparent; }
+.form-control:active, .form-control:focus, .form-control:hover { background-color: white }
+.form-group { margin-bottom: 0.5rem; }
+.list-group-item { padding: .75rem .5rem; }
+
 
 html { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 body { min-width: 320px;/* font-size: calc(16px + 1vw);line-height: calc(1.1em + 0.5vw); */ }
+body::-webkit-scrollbar { background-color: #2DBAFF; width: .25rem; }
+body::-webkit-scrollbar-track { background-color: #2DBAFF; box-shadow: inset 0 0 .125rem #0A5F91; }
+body::-webkit-scrollbar-thumb { background-color: #0A5F91; box-shadow: inset 0 0 .125rem #0A5F91; }
 h1,h2,h3,h4,h5,h6 { font-family: 'Open Sans', sans-serif; }
 a,button,link,nav,select,optgroup,option { font-family: 'Segoe UI', sans-serif; }
 p,label,ul,ol,li,input,textarea { font-family: 'Segoe UI', sans-serif; }
+ul { list-style: none; }
+
 
 header {
-    background-color: var(--bg-green);
     background-image: linear-gradient(120deg, #155799, #159957);
-    background-image: url(../assets/head-tile.jpg);
-    background-size: cover; background-position: center top;
+    background-image: url(../assets/head-tile.jpg), linear-gradient(120deg, #2DBAFF, #0A5F91);
+    background-position: center top;
+    background-size: cover;
     color: #fff;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -81,6 +96,14 @@ header > div#profile-box { margin-top: 1.5rem; }
 header > div#profile-box > #profile-name { opacity: .9; padding: 0 1rem }
 header > div#profile-box > #profile-desc { opacity: .6; padding: 0 1rem }
 header > div#profile-box > #profile-desc > div { display: inline-block; }
+
+
+footer { background-image: linear-gradient(120deg, #2DBAFF, #0A5F91); margin: 0 -15px; }
+footer > div { margin-bottom: .5rem; margin-top: .5rem;}
+footer > div#social > ul > li > label {
+    overflow-x: hidden;
+    padding-left: .5rem;
+}
 
 
 section > .head {
@@ -167,7 +190,7 @@ section#skills > .body > ul > li > div.proficiency > div {
     html{ font-size: 1.25rem; }
 } @media (max-width: 575px) {
     header > div#profile-box { background-color: rgba(0, 0, 0, .6); }
-}@media (min-width: 576px) {
+} @media (min-width: 576px) {
     html{ font-size: 1.05rem; }
     header > div#profile-box { margin-top: .35rem; }
 } @media (min-width: 768px) {
@@ -175,9 +198,8 @@ section#skills > .body > ul > li > div.proficiency > div {
     header > div#profile-box { margin-top: .85rem; }
 } @media (min-width: 992px) {
     html{ font-size: 1.50rem; }
-}@media (min-width: 1200px) {
+} @media (min-width: 1200px) {
     html{ font-size: 1.50rem; }
-}
-@media (min-width: 320px) and (max-width: 640px) {
+} @media (min-width: 320px) and (max-width: 640px) {
     section#skills > .body > ul { width: 100%; }
 }
