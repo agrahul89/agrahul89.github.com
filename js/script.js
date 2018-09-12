@@ -20,10 +20,7 @@ $(document).ready(function() {
         let phone = $('#phone').val();
         let email = $('#email').val();
         let comments= $('#comments').val();
-        let mailbody= 'Name    : ' + name  + '\n'
-                    + 'Contact : ' + phone + '\n'
-                    + 'E-mail  : ' + email + '\n'
-                    + '\n' + comments;
+        let mailbody = `${comments}\n-- -- -- -- -- -- --\n${name}\n${phone}\n${email}`;
 
         let url = 'mailto:' + mailto + '?subject=' + mailSub + '&body=' + encodeURI(mailbody);
         let anchor = document.createElement('a');
