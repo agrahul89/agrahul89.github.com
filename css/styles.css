@@ -64,11 +64,16 @@
 .list-group-item { padding: .75rem .5rem; }
 
 
+*::-webkit-scrollbar { background-color: #2DBAFF; width: .25rem; }
+*::-webkit-scrollbar-thumb { background-color: #0A5F91; }
+*:not(body)::-webkit-scrollbar { border-top-right-radius: .15rem; }
+*:not(body)::-webkit-scrollbar-corner, *:not(body)::-webkit-resizer { background-color: #0A5F91; }
+*:not(body)::-webkit-scrollbar-corner, *:not(body)::-webkit-resizer { border-bottom-right-radius: .15rem; }
+*:not(body)::-webkit-scrollbar-thumb, *:not(body)::-webkit-scrollbar-track { border-top-right-radius: .15rem; }
+
 html { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 body { min-width: 320px;/* font-size: calc(16px + 1vw);line-height: calc(1.1em + 0.5vw); */ }
-body::-webkit-scrollbar { background-color: #2DBAFF; width: .25rem; }
 body::-webkit-scrollbar-track { background-color: #2DBAFF; box-shadow: inset 0 0 .125rem #0A5F91; }
-body::-webkit-scrollbar-thumb { background-color: #0A5F91; box-shadow: inset 0 0 .125rem #0A5F91; }
 h1,h2,h3,h4,h5,h6 { font-family: 'Open Sans', sans-serif; }
 a,button,link,nav,select,optgroup,option { font-family: 'Segoe UI', sans-serif; }
 p,label,ul,ol,li,input,textarea { font-family: 'Segoe UI', sans-serif; }
