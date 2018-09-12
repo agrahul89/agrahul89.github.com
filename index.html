@@ -17,6 +17,7 @@
     <title>Rahul Agarwal - Portflio</title>
 </head>
 <body class="container-fluid">
+
     <header class="row">
         <div id="myphoto-box" class="text-center col-8 col-sm-3">
             <img id="pic" class="img-fluid rounded-circle mx-auto d-block" src="assets/me.jpeg" alt="My Pic">
@@ -29,6 +30,7 @@
             </h6>
         </div>
     </header>
+
     <section id="aboutme">
         <h4 class="head">about me</h4>
         <div class="body">
@@ -51,6 +53,7 @@
             </p>
         </div>
     </section>
+
     <section id="skills">
         <h4 class="head">skills</h4>
         <div class="body clearfix">
@@ -76,15 +79,17 @@
 
         </div>
     </section>
+
     <section id="techexp">
         <h4 class="head">work experience</h4>
         <div class="body"></div>
     </section>
+
     <section id="academics">
         <h4 class="head">Education</h4>
-        <div class="body row">
+        <div class="body">
             <div class="row">
-                <div class="col-12 col-md mt-4"><div class="card">
+                <div class="col-12 col-md mt-4"><div class="card" id="graduation">
                     <div class="d-flex justify-content-center">
                         <img class="card-img-top w-50 h-50 pt-3 pb-2" src="assets/edu/wbut.png" alt="WBUT">
                     </div>
@@ -97,7 +102,8 @@
                         <small>2010</small>
                     </div>
                 </div></div>
-                <div class="col-12 col-md mt-4"><div class="card">
+
+                <div class="col-12 col-md mt-4"><div class="card" id="highschool">
                     <div class="d-flex justify-content-center">
                         <img class="card-img-top w-50 h-50 pt-3 pb-2" src="assets/edu/wbchse.png" alt="WBCHSE">
                     </div>
@@ -110,7 +116,8 @@
                         <small>2006</small>
                     </div>
                 </div></div>
-                <div class="col-12 col-md mt-4"><div class="card">
+
+                <div class="col-12 col-md mt-4"><div class="card" id="primaryedu">
                     <div class="d-flex justify-content-center">
                         <img class="card-img-top w-50 h-50 pt-3 pb-2" src="assets/edu/wbbse.png" alt="WBBSE">
                     </div>
@@ -126,26 +133,28 @@
             </div>
         </div>
     </section>
+
     <section id="certified">
         <h4 class="head">Certification</h4>
         <div class="body">
             <div class="row">
                 <div class="col-12 col-md mt-3">
-                    <img src="/assets/cert/ccp.png" alt="Cognizant Certified Professional" class="img-fluid img-thumbnail">
+                    <img class="img-fluid img-thumbnail" src="/assets/cert/ccp.png" alt="Cognizant Certified Professional">
                 </div>
                 <div class="col-12 col-md mt-3">
-                    <img src="/assets/cert/bb-biz-write.png" alt="Brainbench Business Writing" class="img-fluid img-thumbnail">
+                    <img class="img-fluid img-thumbnail" src="/assets/cert/bb-biz-write.png" alt="Brainbench Business Writing">
                 </div>
                 <div class="col-12 col-md mt-3">
-                    <img src="/assets/cert/bb-struts.png" alt="Brainbench Struts" class="img-fluid img-thumbnail">
+                    <img class="img-fluid img-thumbnail" src="/assets/cert/bb-struts.png" alt="Brainbench Struts">
                 </div>
             </div>
         </div>
     </section>
+
     <footer class="row">
         <div class="col-12 col-sm-6" id="contactme">
             <form id="contact-form" class="list-group" action="">
-                <div id="name" class="form-row">
+                <div class="form-row" id="name">
                     <div class="col form-group">
                         <label class="text-white" for="firstname"><small>First Name</small></label>
                         <input type="text" class="form-control form-control-sm"
@@ -157,21 +166,26 @@
                         id="lastname" minlength="2" maxlength="20" required>
                     </div>
                 </div>
-                <div class="form-group">
+
+                <div class="form-group" id="contact">
                     <label class="text-white" for="phone"><small>Phone Number <small>(optional)</small></small></label>
                     <input type="tel" class="form-control form-control-sm" id="phone" minlength="7" maxlength="14">
                 </div>
-                <div class="form-group">
+
+                <div class="form-group" id="mailbox">
                     <label class="text-white" for="email"><small>E-mail</small></label>
                     <input type="email" class="form-control form-control-sm" id="email" minlength="7" maxlength="50" required>
                 </div>
-                <div class="form-group">
+
+                <div class="form-group" id="details">
                     <label class="text-white" for="comments"><small>Comments</small></label>
-                    <textarea class="form-control form-control-sm" id="comments" rows="2" cols="50" required></textarea>
+                    <textarea class="form-control form-control-sm" id="comments" rows="5" cols="50" required></textarea>
                 </div>
+
                 <button class="btn btn-outline-light btn-block">Contact me</button>
             </form>
         </div>
+
         <div class="col-12 col-sm-6" id="social">
             <label class="sr-only">Social Platform Links</label>
             <ul class="list-unstyled list-group">
@@ -182,6 +196,7 @@
                     </span></a>
                     <label><small>agrahul89.github.io</small></label>
                 </li>
+
                 <li class="list-group-item d-flex align-items-center">
                     <a target="_blank" id="mail-id" href="mailto:rahul89.agarwal@gmail.com"><span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -189,6 +204,7 @@
                     </span></a>
                     <label><small>rahul89.agarwal@gmail.com</small></label>
                 </li>
+
                 <li class="list-group-item d-flex align-items-center">
                     <a target="_blank" id="github" href="https://github.com/agrahul89"><span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -196,6 +212,15 @@
                     </span></a>
                     <label><small>github.com/agrahul89</small></label>
                 </li>
+                <!--
+                <li class="list-group-item d-flex align-items-center">
+                    <a target="_blank" id="resume" href="https://profiles.google.com/rahul89.agarwal"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <label><small>profiles.google.com/rahul89.agarwal</small></label>
+                </li>
+                -->
                 <li class="list-group-item d-flex align-items-center">
                     <a target="_blank" id="linkedin" href="https://www.linkedin.com/in/agrahul89/"><span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -203,6 +228,15 @@
                     </span></a>
                     <label><small>linkedin.com/in/agrahul89</small></label>
                 </li>
+                <!--
+                <li class="list-group-item d-flex align-items-center">
+                    <a target="_blank" id="resume" href="http://twitter.com/agrahul89"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <label><small>twitter.com/agrahul89</small></label>
+                </li>
+                -->
                 <li class="list-group-item d-flex align-items-center">
                     <a target="_blank" id="resume" href="./assets/resume.pdf"><span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -210,8 +244,17 @@
                     </span></a>
                     <label><small>Download my resume</small></label>
                 </li>
+
+                <li class="list-group-item d-flex align-items-center">
+                    <a target="_blank" id="resume" href=""><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                    <img class="img-fluid w-75 pl-2" src="/assets/contact.png" alt="watsapp Number">
+                </li>
             </ul>
         </div>
+
     </footer>
 
     <div class="modal fade" id="under-construction" tabindex="-1" role="dialog"
