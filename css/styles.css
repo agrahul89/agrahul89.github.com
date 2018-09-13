@@ -57,7 +57,6 @@
 .popover-header { font-size: .6rem;  }
 .popover-body { font-size: .65rem; }
 
-.card { box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.3); }
 .form-control { background-color: transparent; }
 .form-control:active, .form-control:focus, .form-control:hover { background-color: white }
 .form-group { margin-bottom: 0.5rem; }
