@@ -4,31 +4,32 @@ $(document).ready(function() {
     addToSkills(frameworks);
     addToSkills(testTools);
     addToSkills(buildTools);
+
     enablePopover(); // enable bootstrap popover
+    $('#contact-form').on("submit", function(event){ event.preventDefault(); contact(); });
+/*
     if(showPopup()) {
         $('#under-construction').modal({
             backdrop: 'static'
         });
     }
-
-    $('#contact-form').on("submit", function(event){
-        event.preventDefault();
-        let mailto = $('#mail-id').next('label').text();
-        let mailSub= 'Can+we+have+a+meeting%3F';
-
-        let name = $('#firstname').val() + ' ' + $('#lastname').val();
-        let phone = $('#phone').val();
-        let email = $('#email').val();
-        let comments= $('#comments').val();
-        let mailbody = `${comments}\n-- -- -- -- -- -- --\n${name}\n${phone}\n${email}`;
-
-        let url = 'mailto:' + mailto + '?subject=' + mailSub + '&body=' + encodeURI(mailbody);
-        let anchor = document.createElement('a');
-        anchor.href = url;
-        anchor.target = '_blank';
-        anchor.click();
-    });
+*/
 });
+
+function contact() {
+    let mailto = $('#mail-id').next('label').text();
+    let mailSub= 'Can+we+have+a+meeting%3F';
+
+    let name  = $('#firstname').val() + ' ' + $('#lastname').val();
+    let phone = $('#phone').val();
+    let email = $('#email').val();
+    let comments = $('#comments').val();
+    let mailbody = `${comments}\n-- -- -- -- -- -- --\n${name}\n${phone}\n${email}`;
+
+    let url = 'mailto:' + mailto + '?subject=' + mailSub + '&body=' + encodeURI(mailbody);
+    let anchor = document.createElement('a');
+    anchor.href = url; anchor.target = '_blank'; anchor.click();
+}
 
 function addToSkills(skillGroup) {
     let skillElements = [];

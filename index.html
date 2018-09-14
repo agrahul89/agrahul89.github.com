@@ -18,7 +18,7 @@
 </head>
 <body class="container-fluid">
 
-    <header class="row">
+    <header id="header" class="row">
         <div id="myphoto-box" class="text-center col-8 col-sm-3">
             <img id="pic" class="img-fluid rounded-circle mx-auto d-block" src="assets/me.jpeg" alt="My Pic">
         </div>
@@ -33,30 +33,23 @@
     </header>
 
     <section id="aboutme">
-        <h4 class="head">about me</h4>
+        <h4 class="head">About me</h4>
         <div class="body">
             <blockquote class="blockquote text-right">
-                <p class="mb-0">I am an avid Java developer, highly experienced in web application
-                    development and high performance middleware applications</p>
+                <p class="mb-0">Java developer with 8 years of IT experience, highly experienced in web application development and high  performance middleware applications</p>
             </blockquote>
-            <p>
-                I have always sought opportunities and challenges that are meaningful and fulfilling. This has taken me
-                from working with a large team on a maintenance project to solo development of web apps to design and
-                build mission critical, highly available middleware systems for clients of my employer.
-            </p><p>
-                As a developer, I enjoy working on challenging tasks, finding solution to complex technical problems
-                and helping others. I also like to write clean, efficient and maintainable code and
-                encourage others to do so.
-            </p><p>
-                In my spare time, I like to tinker with any piece of technology that has caught my interest or working
-                on <a href="https://github.com/agrahul89?tab=repositories" target="_blank">
-                    <cite title="github profile">personal projects</cite></a>.
-            </p>
+
+            <p>I love to design and build systems that are scalable and performant. I have delivered various high performance middleware and enterprise applications on J2EE and Spring. I also have very good experience designing and building REST Services based on JAX-RS and Spring REST.</p>
+
+            <p>Currently, I am involved with one of the clients of my employer to integrate their enterprise systems using Spring Integration with both legacy and cloud based services. The test driven development style that we have adopted during this project has brought me to admire the significance of writing good tests and ease of having a CI-CD setup.</p>
+
+            <p>In my spare time, I like to tinker with any piece of technology that has caught my interest or working on <a href="https://github.com/agrahul89?tab=repositories" target="_blank"><cite title="github profile">personal projects</cite></a>. Recently, I have taken up Angular6 and looking for opportunities which can help apply my learnings and advance my skills further.</p>
+
         </div>
     </section>
 
     <section id="skills">
-        <h4 class="head">skills</h4>
+        <h4 class="head">Tools<small> &amp; </small>Skills</h4>
         <div class="body clearfix">
             <ul id="languages" class="list-unstyled float-left">
                 <h6><strong>Languages</strong></h6><hr>
@@ -80,8 +73,8 @@
         </div>
     </section>
 
-    <section id="techexp">
-        <h4 class="head">work experience</h4>
+    <section id="workexp">
+        <h4 class="head">Work Experience</h4>
         <div class="body">
             <div class="card shadow my-3">
                 <div class="card-header" style="margin-left:0;margin-right:0">
@@ -256,14 +249,14 @@
             </div>
         </div>
     </section>
-
+<!--
     <section id="accolades">
-        <h4 class="head">Recognitions</h4>
+        <h4 class="head">Accolades</h4>
         <div class="body"></div>
     </section>
-
+ -->
     <section id="academics">
-        <h4 class="head">Education</h4>
+        <h4 class="head">Academics</h4>
         <div class="body">
             <div class="row">
                 <div class="col-12 col-sm-8 col-md mt-4 mx-auto"><div class="card shadow" id="graduation">
@@ -311,8 +304,8 @@
         </div>
     </section>
 
-    <section id="certified">
-        <h4 class="head">Certification</h4>
+    <section id="certifics">
+        <h4 class="head">Certifications</h4>
         <div class="body">
             <div class="row">
                 <div class="col-12 col-md mt-3 text-center">
@@ -333,7 +326,7 @@
         </div>
     </section>
 
-    <footer class="row">
+    <footer id="footer" class="row">
         <div class="col-12 col-sm-6" id="contactme">
             <form id="contact-form" class="list-group" action="">
                 <div class="form-row" id="name">
@@ -366,7 +359,7 @@
                 <div class="form-group" id="details">
                     <label class="text-white" for="comments"><small>Comments</small></label>
                     <textarea class="form-control form-control-sm" id="comments"
-                    rows="5" cols="50" required></textarea>
+                    rows="2" cols="50" required></textarea>
                 </div>
 
                 <button class="btn btn-outline-light btn-block">Contact me</button>
@@ -376,6 +369,7 @@
         <div class="col-12 col-sm-6" id="social">
             <label class="sr-only">Social Platform Links</label>
             <ul class="list-unstyled list-group">
+                <!--
                 <li class="list-group-item d-flex align-items-center" id="site">
                     <a target="_blank" href="https://agrahul89.github.io"><span class="fa-stack fa-lg" title="site">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -383,7 +377,7 @@
                     </span></a>
                     <label><small>agrahul89.github.io</small></label>
                 </li>
-
+                -->
                 <li class="list-group-item d-flex align-items-center" id="gmail">
                     <a target="_blank" href="mailto:rahul89.agarwal@gmail.com"><span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -432,17 +426,17 @@
                     <label><small>Download my resume</small></label>
                 </li>
 
-                <li class="list-group-item d-flex align-items-center" id="whatsapp">
-                    <span class="fa-stack fa-lg" title="Scan bar for WhatsApp">
+                <li class="list-group-item d-flex align-items-center" id="whatsapp" title="Scan for WhatsApp Contact">
+                    <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
                     </span>
-                    <img class="img-fluid w-75 pl-2" src="/assets/contact.png" alt="Scan bar for WhatsApp">
+                    <img class="img-fluid w-75 pl-2" src="/assets/contact.png" alt="Scan for WhatsApp Contact">
                 </li>
             </ul>
         </div>
     </footer>
-
+<!-- under construction notice --><!--
     <div class="modal fade" id="under-construction" tabindex="-1" role="dialog"
         aria-label="Site in repair" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -459,6 +453,7 @@
             </div>
         </div>
     </div>
+-->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/skills.js"></script>
