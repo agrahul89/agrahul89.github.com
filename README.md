@@ -13,7 +13,11 @@ I have experience in both working alone and in teams, communicating directly wit
 
 I have proven skills to learn while on the job and producing acceptable results while finding ways to enhance and improve pace and quality of delivery.
 
-I have mentored several junior members in the various teams I have worked tracking and improving their on the job knowledge and performance. I also contribute as an active member in a group of Technical advisors and Quality Assurance in our current project for my current [employer](https://www.cognizant.com/india).
+I have mentored several junior members in the various teams I have worked tracking and improving their on the job knowledge and performance.
+
+I also make periodic presentations and knowledge sharing sessions about new tools and technologoies to various teams sharing their effective usage and best practices learnt on the job.
+
+I also contribute as an active member in a group of Technical advisors and Quality Assurance in our current project for my current [employer](https://www.cognizant.com/india).
 
 > Want to know more? Look at [my portfolio](https://agrahul89.github.io/).
 
