@@ -81,7 +81,7 @@ p,label,ul,ol,li,input,textarea { font-family: 'Segoe UI', sans-serif; }
 
 header {
     background-image: linear-gradient(120deg, #155799, #159957);
-    background-image: url(../assets/head-tile.jpg), linear-gradient(120deg, #2DBAFF, #0A5F91);
+    background-image: url(https://drive.google.com/uc?id=107nSW3VFPK7AeYA5Tqg4xztRKHc9Y6cp), linear-gradient(120deg, #2DBAFF, #0A5F91);
     background-position: center top;
     background-size: cover;
     color: #fff;
