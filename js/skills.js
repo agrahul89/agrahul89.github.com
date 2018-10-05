@@ -66,7 +66,7 @@ let languages = {
 let angular = {
     "id"            : "angular",
     "hidden"        : false,
-    "proficiency"   : "novice",
+    "proficiency"   : "beginner",
     "content"       : "Self trained Angular developer",
     "icon"          : "assets/ico/angular.png",
     "ref"           : "https://angular.io/docs"

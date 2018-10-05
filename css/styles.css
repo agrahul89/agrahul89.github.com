@@ -98,9 +98,9 @@ header > div#myphoto-box {
 }
 header > div#myphoto-box > img#pic { border: 8px solid white; }
 header > div#profile-box { margin-top: 1.5rem; }
-header > div#profile-box > #profile-name { opacity: .9; padding: 0 1rem }
-header > div#profile-box > #profile-desc { opacity: .6; padding: 0 1rem }
-header > div#profile-box > #profile-desc > * { display: inline-block; }
+header > div#profile-box > #profile-name { opacity: .9; padding: 1rem 1rem 0 }
+/* header > div#profile-box > #profile-desc { opacity: .6; padding: 0 1rem }
+header > div#profile-box > #profile-desc > * { display: inline-block; } */
 
 
 footer {
