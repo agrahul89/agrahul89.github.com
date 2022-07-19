@@ -110,7 +110,7 @@ let spring_data_jpa = {
     "id"            : "spring-data-jpa",
     "title"         : "Spring Data JPA",
     "hidden"        : false,
-    "proficiency"   : "intermediate",
+    "proficiency"   : "advance",
     "content"       : "Using as wrapper over persistence layer framework",
     "icon"          : "assets/ico/spring-data.png",
     "ref"           : "https://spring.io/projects/spring-data"
@@ -192,7 +192,7 @@ let testTools = {
 let jenkins = {
     "id"            : "jenkins",
     "hidden"        : false,
-    "proficiency"   : "basic",
+    "proficiency"   : "intermediate",
     "content"       : "Exposure to Jenkins for setup, build & deployment to nexus repository",
     "icon"          : "assets/ico/jenkins.png",
     "ref"           : "https://jenkins.io/doc/"
@@ -200,7 +200,7 @@ let jenkins = {
 let maven = {
     "id"            : "maven",
     "hidden"        : false,
-    "proficiency"   : "advance",
+    "proficiency"   : "expert",
     "content"       : "Build, configuration & deployment of web and middleware applications",
     "icon"          : "assets/ico/maven.png",
     "ref"           : "https://maven.apache.org/users/index.html"
